@@ -1,8 +1,8 @@
 # introduccion 
-- **temario**
-- (comentarios ) 
-- la consola
-- naiming
+- [temario] (#temario)
+- [comentarios ](#comentarios) 
+- [consola] (#consola)
+- [naiming] (#naiming)
   
 
 ## comentarios 
@@ -76,4 +76,50 @@ y poder optimizar para hacer uso de esta herramienta tenemos iniciar la consola 
   }else{
     console.warn("eres menor")
   }
+   ```
 #### 3. tablas
+ es tipo de mensaje  por consola nos muestra la informacion en una tabla.
+ solo formateara alos datos de tipo`array` y `objetos`.
+  ```js
+  lenguajes =[
+     {nombre:"javascript",extension:."js"},
+     {nombre:"python",extension:."py"},
+     {nombre:"php",extension:."php"}
+
+  ]
+  ```
+  
+  [para ver los ejemplos has clic aqui ] (consola.js)
+  
+## naiming
+es la tecnica para nombrar variables  , funcione y clasess dentro de un lenguaje de programacion
+Las variables tienen reglas muy especificas que debemos seguir ala hora de designar sus nombres.
+
+### usos incorrectos
+-no se puede usar espacios
+>[!WARNING]
+```js
+# INCORRECTO
+> CON ESPACIOS =45
+```
+-  no usar un numero deleante
+>[!WARNING]
+```js
+# INCORRECTO
+> 1numero=45
+```
+- evitar simbolos y `snake_case`
+>[!WARNING]
+>```js
+# INCORRECTO
+> dame$=45
+> #incorrecto
+> con_guiones_bajos="no es correcto"
+>```
+### usos correctos
+-debemos usar nombres que expliquen que aporta esa variable a nuestro codigo
+-usar `camelcase`
+> [!TIP]
+> #CORRECTO
+> edadAlumnos=45
+>```

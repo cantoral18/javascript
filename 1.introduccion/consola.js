@@ -19,3 +19,16 @@ if(edad >=18){
   console.warn("eres menor")
 }
 console.time()
+
+//mensaje tipo tabla
+console.table("soy una tabla y edwin clavo")
+```js
+lenguajes =[
+   {nombre:"javascript",extension:."js"},
+   {nombre:"python",extension:."py"},
+   {nombre:"php",extension:."php"}
+
+]
+console.log("lenguajes")
+console.table("elenguajes")
+```
