@@ -8,4 +8,18 @@ ahora la memoria no valatil o memoria secundaria o memoria de almacenamiento
 tiene estos bits de manera ordenada generalmente afilada como si de un 
 estante de una biblioteca se tratara
 -tipos(tipos de datos)
--operadores
+-operadoresgit add
+
+
+#### aritmeticas
+la principal operacion que se puede hacer co numeros es la aritmetica .
+para eso tenemos los operadores aritmeticos como:
+- suma (+)
+- resta(-)
+- multiplicacion(*)
+- division(/)
+- potencia(**)
+-modulo(%)
+** podemos agrupar operaciones con parentesis ()las operaciones
+ que este entre los parentesis se ejecutaran primero
+consulta el archivo de operadores [aqui](./operadores.js) para ver   los ejercicios [aqui](./ejercicios.js)
