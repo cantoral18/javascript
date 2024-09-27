@@ -1,6 +1,14 @@
 valores, tipos y operadores
 ## indice
--[tipos de datos o valores](#valores)
+
+-[tipos de datos o operadores](#vlores-tipos -y-operadores)
+    -[valores](#valores)
+    -[datos primitivos](#datos-primitivos)
+    -[numeros (numer)](#-numerosnumber)
+    -[aritmetica](#aritmeticas)
+    -[cadenas](#cadenas)
+    -[plantilla literales](#plantilla literales)
+
 ## valores
 imagina un mar de bits.una computadora moderna tiene mas de 100 mil de bits 
 almacenados en su `memoria de trabajo`o `memoria principal` o `ram`.
