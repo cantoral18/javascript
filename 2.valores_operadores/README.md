@@ -8,6 +8,8 @@ valores, tipos y operadores
     -[aritmetica](#aritmeticas)
     -[cadenas](#cadenas)
     -[plantilla literales](#plantilla literales)
+    -[operadores unarios](#operadores-unarios)
+    -[Valores boleanos](#Valores boleanos)
 
 ## valores
 imagina un mar de bits.una computadora moderna tiene mas de 100 mil de bits 
@@ -151,3 +153,37 @@ las siguientes expresiones`${}`.
 
 >[!TIP]
 >se dice literal por que con el formato que codificamos sera mostrado de esa misma forma en la consola
+
+#### operadores unarios
+no todo los operadores son simbolos,algunos se escribe como palabras.
+un ejemplo es eloperador `typeof`es operador produce unvalor de cadena que indica el tipo del valor que le proporcionamos.
+`operadores binarios` se les conoce porque operar sobre dos valores`2*5`
+`operador unario`por  que solo trabaja con un valor 
+```js
+//para poder ver su funcionalidad o el valor que genera siempre debemos mostrarlo en un console
+console.log(typeof)
+```
+#### Valores boleanos
+este tipo de dato primitivo es util cuando tenemos un valor que distinga solo entre dos posibilidades ,
+como`si`y `no`o`encendido`y `apagado`.
+para esste propopsito,javascript tiene un tipo de dato `Booleano` ,que tienesolo dos tipos de valores
+`true` y `false`
+**que formas de producir y valores booleanos tenemos?**
+1.**usando operadores de comparacion**
+    los operadores de comparacion son los siguientees
+    -mayor que(>)
+    -menor que(<)
+    -mayor igual que(>=)
+    -menor o igual que (<=)
+    -igual a (==)
+    -extrictament6e igual(===)
+    -no es igual a(!=)
+2.**usando los operadores logicos**
+    javascript soporta tres operadores logicos
+    -and (y)representacion en javascript `&&`
+    -or(o)representacion de javascript `|`
+    -not(no) representacion en js `!`
+    **observacion**
+    este operador unario que su funcion es invertir elo valor 
+    que tiene a su derecha `!true`
+    produce `false`
