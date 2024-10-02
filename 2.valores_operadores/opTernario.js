@@ -6,7 +6,7 @@ respuesta =5 ? "es par":"o impar"
 console.log(respuesta)
 
 //mostrar un mensaje si la edad de una persona si es mayor a 18
-respuesta=20?"eres mayor":"eres menor"
+respuesta=(edad>20)?"eres mayor":"eres menor"
 console.log(respuesta)
 
 //

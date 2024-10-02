@@ -212,3 +212,8 @@ este operador trabja con tres valores
 el pri8mer valor es el que determinara si se muestra el resto de valores .
 eso quiere decir sie el primer valor es  verdadero mostrara el segundo valor 
 miestras  si es falso mostrara en tercer valor
+
+tareaa
+//averiguar la forma que se realizan las comparaciones con cadenas de texto arvark ,zoroaster
+//1. **Comparación Directa:**
+Puedes comparar las cadenas directamente usando operadores de comparación.
