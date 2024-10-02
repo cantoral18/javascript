@@ -10,6 +10,7 @@ valores, tipos y operadores
     -[plantilla literales](#plantilla literales)
     -[operadores unarios](#operadores-unarios)
     -[Valores boleanos](#Valores boleanos)
+    -¨[operador ternario](#operador-ternario)
 
 ## valores
 imagina un mar de bits.una computadora moderna tiene mas de 100 mil de bits 
@@ -187,3 +188,27 @@ para esste propopsito,javascript tiene un tipo de dato `Booleano` ,que tienesolo
     este operador unario que su funcion es invertir elo valor 
     que tiene a su derecha `!true`
     produce `false`
+>![TIP]
+>**AND `&&` `?? `**
+. SI TENEMOS DOS VALORES VERDADEROS DEVOLVERA EL SEGUNDO VALOR VERDADERO
+. SI TENEMOS Y UN VALOR FALSO Y UN VERDADERO DE VOLVERA EL FALSO
+
+>![TIP]
+>**OR `|| `**
+. SI TENEMOS DOS VALORES VERDADEROS DEVOLVERA, EL PRIMER VALOR VERDADERO
+. SI TENEMOS UN VALOR VERDADERO Y UNO FALSO DEVOLVERA ,EL VALOR VERDADERO
+
+3. **USANDO EL OPERADOR  RELACIONAL**
+este operador compara sus valores y retorna un boleano como resultado
+lo que evalua este operador si un propiedad especifica se encuentra en un objeto.
+evalua que si el primer valor que se encuentra asu izquierda existen o 
+forma parte del segundo valor que se encuentra asu derecha.
+```js
+"a" in["a","e","i","o","u"]
+
+```
+#### operador ternario
+este operador trabja con tres valores
+el pri8mer valor es el que determinara si se muestra el resto de valores .
+eso quiere decir sie el primer valor es  verdadero mostrara el segundo valor 
+miestras  si es falso mostrara en tercer valor

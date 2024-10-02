@@ -20,12 +20,31 @@ console.log(NaN==NaN)
 console.log("!">="?")
 //arvark < zoroaster
 console.log("arvark"<"zoroaster")
+
 //en el caso del operador && su reltado sera verdadero solo si ambos valores son verdaderos
 console.log(true && false) false 
 console.log(true && true) true
+
+//OBSERVACIO:si ambos valores son verdaderos devolvera el segundo valor,
+console.log("hola"&&"mundo")
+
+//OBSERVACION:en caso que exista un valor verdadero y un falso devolvera el falso.
+console.log(0 && "hola")
+//ojo:los valores 0,nan y una cadena vacia"" son considerados false
+
+
 // en el caso del operador|| produce verdarero si cualquira de sus valores dados es verdadero.
 console.log(false || false) false
 console.log(true || false) true
+//
+respuesta="te devuelvo los ositos tiernos"
+console.log(respuesta|| "tu busqueda no existe")
+console.log(0|| "")
+
+
 //en el caso de operador ! invierte el valor dado
 console.log(!true ) false
 console.log(!false ) true
+
+//usando el operador relacional
+console.log("hola"in"hola mundo")
