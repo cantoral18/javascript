@@ -2,6 +2,10 @@
 ## indice
 -[interacion con el usuario](#interacion-basica-el-usuario)
 -[declaraciones y expresiones](#expresiones-y-declaraciones)
+-[bindings (enlaces)](#bindings-enlaces)
+-[el entorno](#el-entorno)
+-[control de flujo](#control-de-flujo)
+
 ## interacion basica con el usuario
 podemos interctuar con el usuario desde javascript ,utilizando un metodo sencillo que biene implementado
 en los navegadores el metodo es conocido como`window`o el metodo de ventana este metodo en realidad es un objeto  que contiene o almacena carias funciones entre ellas las de mostrar mensajes o pedir datos al usuario.
@@ -38,3 +42,48 @@ respuesta=window.promot("como te llamas")
 let estado=!false;
 
 ```
+## bindings (enlaces) 
+cuando creamos un valor estos valores son volatiles solo existen en la ejecucion
+ del programa y solo cuando llamados,
+el bingings o enlace de manera que javascript recuerda los valoresy mantiene un 
+estado interno asi como la reutalizacion de valores
+**como lo usamos los bingings en javascript**
+para usar el bingings primero debemos usar la palabra reservadao `keyword`de nombre `let`,despues debemos darle un nombre para identificar
+el enlace luego asignarle el valor.
+```js
+// este es un enlace que puede auntar a varios valores
+//como un pulpo con muchos brazos
+let edadPersona =34 //esto es una enlace, agarramos valores
+
+//si deseamos que nuestro enlace solo apunte un valor osea pulpo con un braso entonces para crear este enlace debemos hacer uso de keywor const
+const edad=34
+//este enlace siempre apuntara el valor 34 no podra modificarse enlace  otro valor
+
+```
+>[! TIP]
+>**QUE NOMBRE PONERLE A UN ENLACES** -el nombre  de una enlace debera describir el valor
+al que esta enlasado y debera estar escrita en  `camelCase`
+```js
+//quiero crear un enlace que tenga el valor de la fecha actual
+let yyyymmdd="20240910"//incorrecto
+let fechaActual="09-10-24" // correcto
+
+let edadActualAlumno=34
+
+```
+## el entorno
+el entorno es conocido como el momento el que se ejecuta o inicia un archivo en javasript.
+el entorno al crearce no se crea basio dentro del entorno se crearan la coleccion de enlaces y valores.
+
+**tarea** averiguar mas sobre la ejecucion en linea de los entornos en javascrip
+## control de flujo
+una sentencia  se ejecutan  como si fuera una historia de arriba a abajo  por ejemplo:
+```js
+let elNumero =prompt("elige un numero")
+console.log(`tu numero es la raiz cuadrada de:${(+elNumero)*(+elNumero} `)
+
+//primero le pide al usuario un numero y despues muestra un mensaje y el cuadrado de ese numero 
+```
+### ejecucion condicional 
+hacemos uso de esta en el control de flujo cuando tenemos distintas caminos o distintos 
+mensajes que deseamos mostrar segun una condicion.
