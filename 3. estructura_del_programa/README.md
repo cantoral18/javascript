@@ -87,3 +87,36 @@ console.log(`tu numero es la raiz cuadrada de:${(+elNumero)*(+elNumero} `)
 ### ejecucion condicional 
 hacemos uso de esta en el control de flujo cuando tenemos distintas caminos o distintos 
 mensajes que deseamos mostrar segun una condicion.
+
+```js
+**condicion simple`if`de una sola linea**
+if(1+1==2)console.log("es verdad");
+```
+-**condicion de doble evaluacion`if else`**
+existen casos en los que tendremos ejecutar un codigo si es verdad pero tambien si es falso.ejecucion de dos caminos.
+ejemplos:
+```js
+let edaPersona=16;
+if(edadPersona>=18){
+    console.log("eres mayor de edad");
+
+}else{
+    console.log("eres menor de edad")
+}
+```
+-**condision multiple`if ` `else if`**
+se utiliza cuando se tiene que evaluar y devolver  varias opciones o multples respuestas
+ejemplo:
+```js
+let total_compra=30
+if (total_compra>50 && total_compra <100){
+    console.log(`tiene un descuento del10% ${total_compra*0.10}` )
+}
+else if (total_compra>100 && total-compra <500){
+    console.log(`tiene un descuento del20% ${total_compra*0.20}`)    
+
+}else{
+console.log(`tiene un descuento del 50% ${total_compra*0.50}`)   
+}
+
+```
