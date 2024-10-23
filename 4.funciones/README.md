@@ -4,6 +4,8 @@
   - [Tipos de Argumentos y Parametros](#tipos-de-argumentos-y-parametros)
     - [Argumentos y Parametros Posicioneles](#argumentos-y-parametros-posicioneles)
     - [Argumentos y Parametros Nominales](#argumentos-y-parametros-nominales)
+- [ tipos de funciones por su notacion](#tipos-de-funciones-por-su-notacion)
+    -[Funciones como valor](#funciones-como-valor)
 
   
 Las funciones en javascript son `bloques de codigo ejecutable`, alos que podemos pasar parametros y operar cion ellos.
@@ -85,3 +87,54 @@ registroAlumno("nombre","apellido","todos los dias")
 ```
 > [!NOTE]
 > Posiciones en orden y Nominales especificar el parametro y su valor
+
+## tipos de funciones por su notacion
+### Funciones como valor
+en este caso se crea una funcion como si fuera un valor de un enlace.
+
+```js
+let saludo=function(){
+    console.log("bienvenido")
+}
+saludo()
+```
+En este caso el nombre de la funcion sera el nombre que le pongamos al enlace y para llmarlo o ejecutarlo debemos poner el nombre del enlace mas los parentesis.
+al igual que una funcion clasica podemos tambien pasarle  parametro
+### Funcion como declaracion
+se le conoce como funcion`declaracion`ala manera clasica de como creamos una funcion
+
+```js
+function saludo(){
+    return "saludo a todos"
+}
+console.log(saludos())
+```
+### Funcion flecha (arrow function)
+esta funcion es introducida apartir de la version de ecma script5 `es5`.
+se implemento para la creacion y ejecucion rapida y mas entendible de las funciones
+la funcion flecha evita la `verbosidad`en javascript
+> [!NOTE]
+> `verbosidad`o `verboso` se utiliza en la programacion para referirse a un codigo que necesita demaciadas lineas de codigo o necesita cumplir estrictamente una serie de reglas podemos  comprar la `verbosidad`a un texto demasiadop extenso o redundante
+se crea de la misma manera  que una funcion como valor ,eso quiere decir que la funcion flecha sera  el valor de un enlace.
+la funcion flecha tiene la siguiente estructura.
+EL PARAMETRO SEGUIDO FLECHA `=>` y del cuerpo de ser necesario o solo de codigo que se retornara
+```js
+function saludo(){
+    return "saludo a todos"
+}
+console.log(saludos())
+
+let saludo=()=>("saludo a todos")
+console .log(saludo())
+
+let mensaje=texto=>console.log("hola,",texto)
+console.log(mensaje("hola"))
+//en el caso de tener mas de un parametro y ejecutar mas de una sola linea de codigo
+
+let registroUsuario=(nombre,apellido)=>{
+    let alumno=`${nombre},${apellido}`
+    return alumno
+}
+console.log (registroUsuario("edwin","guerra"))
+```
+### diferencias
