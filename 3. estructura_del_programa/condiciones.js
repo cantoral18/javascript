@@ -1,6 +1,7 @@
-//ejercicios de condiciones
-//crear un progarama que me pide un numero y me muestre por consola si es un numero par o impar
+//ejemplo de condicion simple
+//capturamos la edad y lo convertimos a numero
 
+<<<<<<< HEAD
 //let numero=prompt("ingrese un numero")
 
 //if(+numero%2==0){
@@ -92,3 +93,15 @@ for(let i=0;i<=5;++){
     }
 
 }
+
+let edad =Number ( prompt("ingresa tu edad"))
+//verificamos si el tipo de datos edad es number realmente
+
+if(typeof.edad == "Number"){
+    //si la comparacioin es verdad mostraremos po consola la raiz cuadra de edad
+    console.log(edad*edad)
+};
+
+//ejemplo de condicion simple de una sola linea
+if(1+1==2)console,log("es verdad");
+

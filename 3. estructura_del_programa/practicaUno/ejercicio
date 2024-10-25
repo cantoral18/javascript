@@ -1,0 +1,18 @@
+
+const num2 = parseFloat(prompt("Ingresa un número:"));
+
+const resultado = num1 ;
+
+resultado > 100 ? console.log("El numero es mayor que 100") : console.log("El numero no es mayor que 100");
+
+//ejercicio 2
+const contrasenaCorrecta = "hola"; 
+const contrasenaUsuario = prompt("Ingresa la contraseña:"); 
+
+if (contrasenaUsuario === contrasenaCorrecta) {
+    console.log("contraseña correcta.");
+} else {
+    console.log(" Contraseña incorrecta.");
+}
+
+//ejercicio3
