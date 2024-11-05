@@ -159,3 +159,26 @@ despedida()
 ## la pila de llamadas
 es una tecnica que se usa para controlar la ejecucion de una funcion
 **averiguar sobre LIFO**
+## CLOSURE O funciones de cierre (funciones que retornan funciones )
+un `clousure` es una funcion que encapsula una serie de variables y definiciones locales que unicamente seran accesibles si son devueltas con el keywoard `return`.
+antes que aparesca la version `ecma` los `clousure `eran un patron creacional que nos permita modularizar nuestros codigos, en lugar de usar las`clases`,que eran populares en otro lenguaje pero que en javascript aun no lo implementaba.
+```js
+//una funcion que retorna otra funcion (por lo general es una funcion anonima)
+//funcion clasica
+function retornaValor(n){
+    return n+1
+}
+//llamando a la funcion clasica
+retornnaValor(10)
+//funcion closure
+function retornaValor(n){
+    return function(){
+        return n+1
+    }
+}
+//llamando a la funcion closure
+retornaValor(10)
+```
+
+>[!note]
+>las funciones `clousure `
