@@ -161,7 +161,8 @@ es una tecnica que se usa para controlar la ejecucion de una funcion
 **averiguar sobre LIFO**
 ## CLOSURE O funciones de cierre (funciones que retornan funciones )
 un `clousure` es una funcion que encapsula una serie de variables y definiciones locales que unicamente seran accesibles si son devueltas con el keywoard `return`.
-antes que aparesca la version `ecma` los `clousure `eran un patron creacional que nos permita modularizar nuestros codigos, en lugar de usar las`clases`,que eran populares en otro lenguaje pero que en javascript aun no lo implementaba.
+antes que aparesca la version `ecma` los `clousure `eran un patron creacional que nos permita modularizar nuestros codigos, en lugar de usar las`clases`,
+que eran populares en otro lenguaje pero que en javascript aun no lo implementaba.
 ```js
 //una funcion que retorna otra funcion (por lo general es una funcion anonima)
 //funcion clasica
@@ -180,5 +181,43 @@ function retornaValor(n){
 retornaValor(10)
 ```
 
->[!note]
->las funciones `clousure `
+> [!note]
+> las funciones closure son usadas por que pueden mantener el valor de sus enlaces o variable.s locales
+en todo el proceso de la ejecucion de su funcion padre por cada llamada que se le realize.
+
+### CLOSURE TIPO CLASE
+so funciones cuyo uso son iguales ala clases dentro de la ejecucion de una clase tenemos lo que se llama `instancia`en javascript
+tenemos funciones`closure`que se pueden instanciar al igual que una clase, la diferencia con las funciones `closure`clasicas es uqe
+ en esta hacemos uso de la palabra reservada `keyword`llama `this`.
+
+```js
+function contador(){
+    this.contador=0
+    this.incre=function(){
+        this.contador++
+    }
+     this.decre=function(){
+        this.contador--
+    }
+
+}
+//realizamos la instancia
+let count1=new contador ()  
+for (let i=0;i<5;i++){
+    count1.contador
+
+}
+
+
+
+```
+> [!NOTE]
+> la funcion closure de tipo clase no hace uso de`RETURN`en susfunciones al hacer uso de `this`
+casa funcion o variable estara ensalada al objeto que se cree
+
+> [!WARNING]
+>el problema principa de este tipo de funcion , esque cuando creamos un nuevo objeto a partit
+de la funcion tipo clase ,reservara espacios en memoria para toda la clase y sus valor creados 
+uso quiere decir variable y funciones , cada que llamamos auna funcion esta se replica en memoria
+
+## PROTOYPE(TAREA -AVERIGUAR Y SUS EJEMPLOS)
