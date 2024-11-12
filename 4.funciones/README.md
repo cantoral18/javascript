@@ -221,3 +221,104 @@ de la funcion tipo clase ,reservara espacios en memoria para toda la clase y sus
 uso quiere decir variable y funciones , cada que llamamos auna funcion esta se replica en memoria
 
 ## PROTOYPE(TAREA -AVERIGUAR Y SUS EJEMPLOS)
+es un mecanismo que permite a los objetos heredar propiedades y métodos de otros objetos. Cada función en JavaScript es, en sí misma, un objeto, y cada objeto tiene una propiedad interna llamada prototype. Esta propiedad es un objeto que contiene métodos y propiedades que pueden ser compartidos entre todas las instancias de una función constructora.
+
+Conceptos clave:
+Prototype de una función: Cada función en JavaScript tiene un prototype que es utilizado por los objetos creados a partir de esa función constructora.
+Herencia prototípica: Los objetos pueden heredar propiedades y métodos de su prototipo. Si un objeto no tiene una propiedad o método, JavaScript buscará en su prototipo y, si no lo encuentra, continuará buscando en el prototipo del prototipo, y así sucesivamente, hasta llegar al objeto null.
+Modificación del prototipo: Es posible agregar métodos o propiedades a un prototipo para que estén disponibles en todas las instancias de esa función constructora.
+Ejemplo básico de Prototype:
+Supongamos que tenemos una función constructora llamada Persona:
+
+```js
+function Persona(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+// Agregar un método al prototipo de Persona
+Persona.prototype.saludar = function() {
+    console.log("Hola, mi nombre es " + this.nombre);
+};
+
+// Crear una nueva instancia de Persona
+const juan = new Persona("Juan", 30);
+
+// Llamar al método heredado de Prototype
+juan.saludar();  // Output: "Hola, mi nombre es Juan"
+
+```
+
+### prototype 
+para crear un prototype tendremos que crear primero nuestra funcion principal que es la encargada de almacenar nuestras variables locales con las que trabajaremos.
+Luego accederemos al prototype de nuestra funcion creada y en valor o variable de tipo objeto le indicaremos las funciones que tendra nuestra funcion principal que interactuara con nuestras variables locales.
+
+```js
+function contador(){
+    this.count=0
+    this.nombre=nombre
+}
+contador.prototype={
+    incremento:function(){
+        this.count++
+    }
+    decremento:function(){
+        this.count--
+    }
+    mostraDatos:function(){
+        return `${this.count},${this.nombre}`
+    }
+}
+```
+
+
+>[INOTE]
+> es una convencion usar como nombre de nuestra funcion principal, 1. que debe ser singular, 2. que use PascalCase
+## RECURCION EN FUNCIONES(TAREA)
+es un proceso en el que una función se llama a sí misma para resolver un problema. La función recursiva generalmente tiene una condición base que detiene las llamadas recursivas cuando se cumple, evitando así que se llame infinitamente.
+```js
+function factorial(n) {
+    if (n === 0) {  // Condición base
+        return 1;
+    }
+    return n * factorial(n - 1);  // Llamada recursiva
+}
+
+console.log(factorial(5));  // Output: 120
+
+```
+* Explicación:
+
+* La función factorial se llama a sí misma con un valor decreciente de n.
+* La condición base if (n === 0) detiene la recursión cuando n llega a 0.
+
+
+## FUNCIONES CALLBACKS (TAREA)
+es una función que se pasa como argumento a otra función y que se ejecuta después de que se complete una tarea o proceso dentro de esa función.
+### Concepto:
+Las funciones callback se usan para manejar tareas asíncronas o para permitir que una función se ejecute después de que otra haya terminado. El flujo de ejecución de una callback depende del comportamiento de la función que la recibe.
+```JS
+function saludar(nombre, callback) {
+    console.log("Hola, " + nombre);
+    callback();  // Llamada a la función callback
+}
+
+function despedir() {
+    console.log("Adiós!");
+}
+
+saludar("Juan", despedir);  // Output: "Hola, Juan" -> "Adiós!"
+
+```
+* Explicación:
+
+* saludar es una función que acepta un nombre y una función callback.
+* Después de mostrar el saludo, llama a la función callback (despedir), que muestra un mensaje de despedida.
+
+# CLASES
+las clases en javascript llegan enla version `ECMAScript`,javascript no tenia al igual que otros lenguajes de programacion orientados a los objetos la `clase` ya que js se enfoca en la `programacion funcional` sin embargo con la llegada es `ES6`javascript adopta ser un lenguaje de programacion multiparadigma, entre ellos la programacion orientada a `objetos` con la llegada de las `clases`
+## estructura de una clase en javascript.
+una clase esta separada en tres grandes secciones.
+1. el nombre de la clase que debera ser en singular y en Pascalcase.
+2. debera tener atributos(valorwes,variables) estos deberan ser sustantivos y estar escritos en camelcase
+3. debera tener metodos (acciones ,funciones) estos deberan ser verbos u etas escritos en camelcase
