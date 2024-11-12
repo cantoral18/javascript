@@ -322,3 +322,29 @@ una clase esta separada en tres grandes secciones.
 1. el nombre de la clase que debera ser en singular y en Pascalcase.
 2. debera tener atributos(valorwes,variables) estos deberan ser sustantivos y estar escritos en camelcase
 3. debera tener metodos (acciones ,funciones) estos deberan ser verbos u etas escritos en camelcase
+
+```js
+
+class  computadora{
+//atributos
+    constructor(marca){
+        this.marca=marca
+        this.color=""
+        this.tipocase="tower"
+    }
+    encender(){
+        return "estoy encendiendo..."
+    apagar(){
+        apagar "estoy cerrando sesion y guardandoinformacion"
+    }
+    escribir(){
+        return "estoy escribiendo..."
+    }
+    jugar(){
+        return "estoy jugando."
+
+}
+//instanciar
+let miPC= new computador ("gigabytyte)
+
+```
