@@ -1,1 +1,0 @@
-console.error("soy un error")

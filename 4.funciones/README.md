@@ -274,6 +274,7 @@ contador.prototype={
 
 >[INOTE]
 > es una convencion usar como nombre de nuestra funcion principal, 1. que debe ser singular, 2. que use PascalCase
+
 ## RECURCION EN FUNCIONES(TAREA)
 es un proceso en el que una función se llama a sí misma para resolver un problema. La función recursiva generalmente tiene una condición base que detiene las llamadas recursivas cuando se cumple, evitando así que se llame infinitamente.
 ```js
