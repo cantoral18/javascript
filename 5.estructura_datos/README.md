@@ -62,7 +62,60 @@ vocales.push("e")
 let vocales=["a","e"]
 vocales.pop()
 ```
+
 ### tarea averiguar que otros metodos mas usados que existen para el tratamiento de listas en javascrip
+- shift: Elimina el primer elemento de un array.
+```js
+let vocales = ["a", "e", "i"];
+vocales.shift();
+```
+- unshift: Agrega uno o más elementos al inicio de un array.
+```js
+let vocales = ["e", "i"];
+vocales.unshift("a");
+```
+- concat: Combina dos o más arrays y devuelve un nuevo array.
+```js
+let vocales1 = ["a", "e"];
+let vocales2 = ["i", "o"];
+let todasVocales = vocales1.concat(vocales2);
+
+```
+- join: Combina todos los elementos de un array en una cadena de texto.
+```js
+let vocales = ["a", "e", "i"];
+let cadena = vocales.join("-");
+
+```
+- splice: Modifica un array eliminando, reemplazando o agregando elementos.
+
+```js
+let numeros = [1, 2, 3, 4, 5];
+numeros.splice(2, 1, 6, 7); // A partir del índice 2, elimina 1 elemento y agrega 6 y 7
+console.log(numeros); // [1, 2, 6, 7, 4, 5]
+```
+- map: Crea un nuevo array con los resultados de aplicar una función a cada elemento del array original.
+
+```js
+let numeros = [1, 2, 3];
+let dobles = numeros.map(function(numero) {
+  return numero * 2;
+});
+```
+- sort: Ordena los elementos de un array en su lugar.
+```js
+let numeros = [3, 1, 4, 2];
+numeros.sort();
+console.log(numeros); // [1, 2, 3, 4]
+```
+
+
+Resumen de los métodos más usados:
+- push y pop  -> para agregar y eliminar elementos del final.
+- shift y unshift   -> para agregar y eliminar elementos del inicio.
+- concat, join, slice y splice  -> para manipular y combinar arrays.
+- forEach, map, filter, reduce, y find  ->para recorrer y transformar arrays.
+- sort y reverse -> para ordenar y cambiar el orden de los elementos.
 
 ## objetos
 
