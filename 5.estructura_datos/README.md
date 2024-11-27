@@ -118,8 +118,33 @@ Resumen de los métodos más usados:
 - sort y reverse -> para ordenar y cambiar el orden de los elementos.
 
 ## objetos
-
+los objertos son tipos datos estructurados similares alas listas ,para
+poder acceder aun elemento de la lista javascript les asisgnaba
+indices, en este caso los objetos como unica diferencia de lass
+listas nosotros podemos acignar el nombre del elemento al cual 
+deseamos acceder a esto se le conoce como 
+`clave valor`
+cada clave :valor es un elemento de un objeto si deseamos crrear mas 
+elementos tendremos que separarlos por comas
 ### creacion
+para crear un objeto debemos encerrar los elementos en llaves `{}`
+cada elementos estaran conformados po su `clave:valor`
+```js
+let datosAle=["ale","licla",20,"M"]
+let datosAleObjetos={
+    nombre:"ale",
+    apellido:"licla",
+    edad:20,
+    sexo:"M",
+    mascota:["puchi","lasi"]
+    dirreccion:{
+        tipoCalle:"pasaje",
+        nombreCalle:"los olivos",
+        numeroVivienda:589,
+    },
+    accion:()=>{console.log("hola soy ale")}
+}
+```
 ### aceeder a un elemento de objeto
 ### metodos
 
