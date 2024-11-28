@@ -118,43 +118,87 @@
 
 //EJEERCICIO objetos
 
-let datosAleObjetos={
-    nombre:"ale",
-    apellido:"licla",
-    edad:20,
-    sexo:"M",
-    mascota:["puchi","lasi"],
-    direccion:{
-        tipoCalle:"pasaje",
-        nombreCalle:"los olivos",
-        numeroVivienda:589,
-    }
+// let datosAleObjetos={
+//     nombre:"ale",
+//     apellido:"licla",
+//     edad:20,
+//     sexo:"M",
+//     mascota:["puchi","lasi"],
+//     direccion:{
+//         tipoCalle:"pasaje",
+//         nombreCalle:"los olivos",
+//         numeroVivienda:589,
+//     }
     
-}
-console.log(datosAleObjeto.mascota)
-console.log(datosAleObjeto["edad"])
-console.log(datosAleObjeto.mascota[1])
+// }
+// console.log(datosAleObjeto.mascota)
+// console.log(datosAleObjeto["edad"])
+// console.log(datosAleObjeto.mascota[1])
 
 
-/// CREAR UNA FUNCION QUE ME GENERE UN OBJETO DE CARACTERISTICAS TECNICAS DE UNA COMPUTADORA ,EL OBJETO DEBERA TENER COMO MINIMO LOS SIGUIENTES VALORES
-//MARCA.MODELO,PROCESADOR,RAM,DISCO Y TARJETA DE VIDEO.
+// /// CREAR UNA FUNCION QUE ME GENERE UN OBJETO DE CARACTERISTICAS TECNICAS DE UNA COMPUTADORA ,EL OBJETO DEBERA TENER COMO MINIMO LOS SIGUIENTES VALORES
+// //MARCA.MODELO,PROCESADOR,RAM,DISCO Y TARJETA DE VIDEO.
 
-const computadora=(marca,modelo,procesasor ,ram)=>{
-    return{
-        marca,      //si vamos a devolver lo mismo se popne uno solo
-        modelo,
-        procesador,
-        ram,
-    }
-}
-let objetoPc=computadora("los marcas","margarita","xeon,"100gbs")
+// const computadora=(marca,modelo,procesasor ,ram)=>{
+//     return{
+//         marca,      //si vamos a devolver lo mismo se popne uno solo
+//         modelo,
+//         procesador,
+//         ram,
+//     }
+// }
+// let objetoPc=computadora("los marcas","margarita","xeon,"100gbs")
 
-console.log(objetoPc)
-objetoPc["marca"]="intel"
-console.log(objetoPc)
-objetoPc["tarjeta"]="envidia"
-console.log(objetoPc)
-//en este caso la clave tarjeta no existe en mi objeto por lo tanto se
-//creara un elemento con la clave tarjeta y su vale envidia me tienes envia
 
-//averiguar como eliminar un element de un objeto
+// function Computadora(marca, modelo, procesador, ram, disco, tarjetaVideo) {
+  
+//     let computadora = {
+//         marca: marca,
+//         modelo: modelo,
+//         procesador: procesador,
+//         ram: ram,
+//         disco: disco,
+//         tarjetaDeVideo: tarjetaVideo
+//     };
+//     return computadora;
+//   }
+//   let miComputadora =Computadora('ph', 'XPS 15', 'Intel Core i7', '8GB', '500GB SSD', 'NVIDIA GeForce GTX 1650');
+//   console.log(miComputadora)
+//   // en este caso la clave marca existe en mi objeto por lo tanto su valor sera actualizado por intel
+//   miComputadora["marca"]="ph"
+//   console.log(miComputadora)
+//   //En este caso la clave targeta no existe en mi objeto por lo tanto se creara un nuevo elemento con la clave tarjeta y su valor nvidia me tinesnvidia
+//   miComputadora["targeta"]="nvidia me tienes envidia"
+//   console.log(miComputadora)
+  
+
+
+  
+//averiguar como eliminar un elemento de un objeto
+
+//Sintaxis básica:
+delete objeto.propiedad;
+delete objeto["propiedad"];
+
+//Ejemplo 1: Usando la notación de punto
+let persona = {
+    nombre: "tania",
+    edad: 23,
+    ciudad: "grau"
+};
+
+delete persona.edad; // Elimina la propiedad 'edad' del objeto 'persona'
+
+console.log(persona); 
+
+//Ejemplo 2: Usando la notación de corchetes
+let persona = {
+    nombre: "tania",
+    edad: 23,
+    ciudad: "grau"
+};
+
+delete persona["ciudad"]; // Elimina la propiedad 'ciudad' del objeto 'persona'
+
+console.log(persona);
+
