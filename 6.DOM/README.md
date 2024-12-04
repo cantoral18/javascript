@@ -174,6 +174,140 @@ body.appendChild(titulo)
 -**value** -nos permite obtener o setear valores de un elemento `input`.
 
 ## acciones con el elemento en el DOM(AVERIGUAR)
+1. Acceder a un elemento en el DOM
+getElementById: Obtiene un elemento por su id.
+
+```javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+getElementsByClassName: Obtiene una colección de elementos con una clase específica.
+```
+```js
+Copiar código
+const elementos = document.getElementsByClassName("miClase");
+getElementsByTagName: Obtiene una colección de elementos con un nombre de etiqueta (tag) específico.
+```
+```js
+Copiar código
+const elementos = document.getElementsByTagName("div");
+querySelector: Selecciona el primer elemento que coincida con el selector CSS.
+```
+```js
+Copiar código
+const elemento = document.querySelector(".miClase");  // primer elemento con esta clase
+querySelectorAll: Selecciona todos los elementos que coincidan con el selector CSS.
+```
+```js
+Copiar código
+const elementos = document.querySelectorAll("div.miClase");
+```
+2. Modificar el contenido o el estilo de un elemento
+Modificar el contenido de texto:
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.textContent = "Nuevo texto";  // Cambia el texto
+Modificar el contenido HTML:
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.innerHTML = "<p>Nuevo contenido HTML</p>";  // Modifica el contenido HTML
+Modificar los atributos de un elemento:
+
+javascript
+Copiar código
+const imagen = document.getElementById("miImagen");
+imagen.setAttribute("src", "nuevaImagen.jpg");  // Cambia el atributo 'src'
+Modificar el estilo (CSS):
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.style.color = "red";  // Cambia el color del texto
+elemento.style.backgroundColor = "yellow";  // Cambia el color de fondo
+3. Agregar y eliminar clases (CSS)
+Agregar una clase:
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.classList.add("nuevaClase");  // Añade una clase CSS
+Eliminar una clase:
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.classList.remove("nuevaClase");  // Elimina una clase CSS
+Alternar una clase (añadir si no existe, eliminar si existe):
+
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.classList.toggle("activa");  // Si "activa" está presente, se elimina, si no, se agrega
+4. Agregar eventos a los elementos
+Agregar un evento (por ejemplo, clic):
+
+javascript
+Copiar código
+const boton = document.getElementById("miBoton");
+boton.addEventListener("click", function() {
+    alert("¡Botón clickeado!");
+});
+Eliminar un evento:
+
+javascript
+Copiar código
+const boton = document.getElementById("miBoton");
+function miFuncion() {
+    alert("¡Botón clickeado!");
+}
+boton.addEventListener("click", miFuncion);
+boton.removeEventListener("click", miFuncion);  // Elimina el evento
+5. Crear, agregar y eliminar elementos del DOM
+Crear un nuevo elemento:
+
+javascript
+Copiar código
+const nuevoElemento = document.createElement("p");  // Crea un nuevo párrafo
+nuevoElemento.textContent = "Este es un nuevo párrafo.";
+Agregar un nuevo elemento al DOM:
+
+javascript
+Copiar código
+const contenedor = document.getElementById("contenedor");
+contenedor.appendChild(nuevoElemento);  // Agrega el nuevo párrafo al contenedor
+Eliminar un elemento:
+
+```javascript
+const elemento = document.getElementById("miElemento");
+elemento.remove();  // Elimina el elemento del DOM
+```
+6. Modificar la visibilidad de los elementos
+Ocultar un elemento:
+
+```javascript
+
+const elemento = document.getElementById("miElemento");
+elemento.style.display = "none";  // El elemento desaparece
+```
+Mostrar un elemento:
+```js
+
+Copiar código
+const elemento = document.getElementById("miElemento");
+elemento.style.display = "block";  // El elemento vuelve a aparecer (si era un bloque)
+```
+
+7. Desplazamiento y posición en el DOM
+Obtener la posición y el tamaño de un elemento:
+javascript
+Copiar código
+const elemento = document.getElementById("miElemento");
+const rect = elemento.getBoundingClientRect();
+console.log(rect.top, rect.left);  // Muestra la posición
+console.log(rect.width, rect.height);  // Muestra el tamaño
 
 addEventListener("clic",()=>)
 
