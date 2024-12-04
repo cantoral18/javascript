@@ -148,3 +148,54 @@ let datosAleObjetos={
 ### aceeder a un elemento de objeto
 ### metodos
 
+1. Acceso mediante notación de punto (.):
+Este es el método más común y simple para acceder a las propiedades de un objeto. 
+Se usa cuando conoces el nombre de la propiedad y el nombre es una palabra válida
+en JavaScript (sin espacios ni caracteres especiales).
+
+```js
+objeto.propiedad
+
+```
+```js
+const persona = {
+    nombre: 'juis',
+    edad: 23,
+    ciudad: 'vmt'
+};
+
+console.log(persona.nombre);  
+console.log(persona.edad);   
+```
+2. Acceso mediante notación de corchetes ([]):
+Este método es más flexible que la notación de punto. Se usa cuando no conoces el
+nombre exacto de la propiedad, o si la propiedad tiene un nombre no válido para
+la notación de punto (como nombres con espacios, números, o caracteres especiales).
+```js
+objeto["propiedad"]
+
+```
+```js
+const persona = {
+    "primer nombre": 'luis',
+    edad: 23,
+    ciudad: 'vmt'
+};
+
+console.log(persona["primer nombre"]);  
+console.log(persona["edad"]);           
+
+```
+3. Acceso con variables:
+Puedes utilizar una variable dentro de los corchetes para acceder a una propiedad dinámica.
+```js
+const persona = {
+    nombre: 'luis',
+    edad: 23,
+    ciudad: 'vmt'
+};
+
+const propiedad = 'edad';
+console.log(persona[propiedad]); 
+
+```
