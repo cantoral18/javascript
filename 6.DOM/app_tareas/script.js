@@ -6,6 +6,12 @@ button.addEventListener("click",()=>{
     let li=document.createElement("li")
     li.textContent=input.value
     ul.appendChild(li)
+    ul.innerHTML=
+    <li>${input.value}<button id="delete">eliminar</button> </li>
   
     input.value=""
+})
+eliminar=document.querySelector("#delete")
+eliminar.addEventListener("click",()=>{
+    
 })
